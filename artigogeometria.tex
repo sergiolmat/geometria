@@ -10,7 +10,10 @@
 \usepackage{multicol}
 \usepackage{multirow}
 \usepackage{lipsum}				
-\usepackage[brazilian,hyperpageref]{backref}	 
+\usepackage[brazilian,hyperpageref]{backref}
+
+\newtheorem{teo}{Teorema}
+	 
 \usepackage[alf]{abntex2cite}
 \renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
 \renewcommand{\backref}{}
@@ -103,7 +106,6 @@ Para esta construção iremos usar as seguintes notações:
 
 \item $D$, $E$, e $F$ são os pés das alturas relativas aos lados $a$, $b$ e $c$ respectivamente.
 
-\item $O$ será o ponto de encontro das alturas relativas do $\triangle ABC$, isto é, o \textit{Ortocentro}.
 
 \end{itemize} 
 
@@ -124,6 +126,21 @@ Considere agora o triângulo $\triangle DEF$ conforme a figura \ref{tria2}
     \caption{Alturas relativas e $\triangle DEF$ \label{tria2}}
     
 \end{figure}
+
+Vamos construir o círculo circunscrito neste triângulo e, para isso, devemos encontrar o seu circuncentro, pois este será o centro desse círculo.
+
+Tracemos as mediatrizes referentes aos segmentos $DE$ e $EF$. O ponto de intersecção desses segmentos será o circuncentro e o raio do círculo circunscrito será a distância desse ponto a qualquer dos vértices do $\triangle DEF$.
+
+Este círculo terá 6 pontos de intersecção com o $\triangle ABC$ e mais três pontos de intersecção com as alturas relativas aos lados desse triângulo. Esses últimos três pontos são chamados de pontos de Euler.
+
+
+\chapter{O teorema da bissetriz e sua paralela}
+
+Considere o triângulo $\triangle ABC$, com a bissetriz $AT_a$, altura $AH_a$, ponto médio $M_a$ relativo ao lado $BC$ e o ponto de Euler $E_a$, conforme figura ??? . Faça um círculo de centro $E_a$ passando por $M_a$ de tal forma que intercepte a reta suporte de $AH_a$ no ponto $P$. Trace a linha $M_{a}P$.
+
+\begin{teo}\label{teo1}
+	Em qualquer triângulo $\triangle ABC$ com $H_a$ não coincidindo com $M_a$, o segmento $M_{a}P$ é paralelo a bissetriz $AT_a$
+\end{teo}
 
 
 \begin{comment}

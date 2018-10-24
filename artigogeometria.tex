@@ -79,14 +79,14 @@ Triangle Construction publicado em 13 de julho de 2009 disponível no endereço 
 \addcontentsline{toc}{chapter}{Introdução}
 
 
-Neste estudo construiremos o círculo de nove pontos, pois através de um deles (Ponto de Euler) provaremos um teorema que descreve uma linha paralela a uma bissetriz de um triângulo e passando pelo ponto médio do lado oposto. Nós então aplicaremos este teorema para a solução de quatro problemas de construção de triângulo.
+Neste estudo construiremos o círculo de nove pontos e através de um deles (Ponto de Euler) provaremos um teorema que descreve uma linha paralela a uma bissetriz de um triângulo passando pelo ponto médio do lado oposto. Nós então aplicaremos este teorema para a solução de quatro problemas de construção de triângulo.
 
 % \let\clearpage\relax
 
 
 \chapter{Pontos de Euler}
 
-Neste capítulo iremos construir o círculo de nove pontos encontrados em um triângulo qualquer. O círculo de nove pontos é o círculo que intercepta o triângulo em pelo menos seis pontos e mais três pontos nos segmentos relativos a altura entre os vértices do triângulo e os seus lados, sendo esses últimos chamados de pontos de Euler.
+Neste capítulo iremos construir o círculo de nove pontos encontrados em um triângulo qualquer. O círculo de nove pontos é o círculo que intersecta o triângulo em pelo menos seis pontos e mais três pontos nos segmentos relativos a altura entre os vértices do triângulo e os seus lados, sendo esses últimos chamados de pontos de Euler.
 
 Para esta construção iremos usar as seguintes notações:
 
@@ -162,190 +162,26 @@ Considere o triângulo $\triangle ABC$, com a bissetriz $AT_a$, altura $AH_a$, p
 	
 	\center
 	
-	\includegraphics[width=6.9cm]{trianguloteo.png}
+	\includegraphics[width=8.5cm]{trianguloteo.png}
 	\caption{Bissetriz e sua paralela \label{triateo}}
 	
 \end{figure}
 
-\begin{comment}
-\chapter{Objetivos}
+\textit{Demonstração}
 
-\begin{itemize}
-    \item Aprender a diferença entre alguns sistemas de numeração
-    \item Transformar, através da calculadora, números do sistema decimal para outros  sistemas, como o binário e o hexadecimal e vice-versa.
-\end{itemize}
-
-
-\chapter{Público alvo}
-
-Alunos do Ensino Médio
-
-\vspace{1cm}
-
-\chapter{Tempo estimado}
-
-3 aulas de 50 minutos
-\vspace{1cm}
-
-
-
-\chapter{Roteiro da Aula}
-% ---
-\section{História dos sistemas de numeração}
-
-Descrever um pouco da história dos números e seus sistemas de numeração, como o sistema de números romanos, até chegarmos ao sistema mais usado na atualidade, que é o sistema decimal. Com isso mostramos que o sistema decimal é um sistema chamado posicional, isto é, que o valor de um determinado símbolo depende de sua posição, e o sistema romano não é posicional.
-
-Tempo: 25 minutos
-\section{Encontrar restos de divisão}
-
-Usando a calculadora, devemos encontrar os restos de divisão, usando vários dividendos e divisores naturais. Para isso uma das possibilidades é fazer a divisão na calculadora e depois fazer a multiplicação apenas da parte inteira do número encontrado com o divisor e ver qual a diferença, com isso mostramos que o resto será sempre menor que o divisor. Aos poucos vamos nos concentrando na divisão por 2 e por 16, pois essas são as bases dos números binários e hexadecimais.
-
-Tempo: 25 minutos
-
-\section{Transformar números decimais em binários}
-Novamente usando a calculadora, transformaremos os números decimais em binários. Para isso dividimos uma lista de números naturais por 2 sucessivamente, anotando os restos dessa divisão. Mostramos que a leitura desses restos na ordem inversa é o número transformado em binário. Por exemplo, transformar o número 45 em binário.
+Seja $O$ o circuncentro do $\triangle ABC$. A mediatriz $M_{a}O$ e a bissetriz $AT_a$ intersecta o círculo circunscrito de centro $O$ em $S$, pois vejamos a figura \ref{trianbismed}:
 
 \begin{figure}[h]
-
-    \center
-
-%    \includegraphics[width=7cm]{binariofim.png}
-
+	
+	\center
+	
+	\includegraphics[width=5cm]{triangulocirc.png}
+	\caption{Intersecção da bissetriz e da mediatriz\label{trianbismed}}
+	
 \end{figure}
 
+O ângulo $\hat{BAC}$ tem como arco de visada o arco $BC$. Como $AT_a$ é a bissetriz de $\hat{BAC}$ irá intersectar o círculo de centro $O$ no ponto médio do arco de visada $AB$. A mediatriz $OM_a$ é o lugar geométrico em que todos os pontos estão equidistantes dos pontos $B$ e $C$, logo o ponto em que esta intersecta o círculo de centro $O$ também é equidistante desses pontos, assim também é metade do arco $BC$, logo a mediatriz $OM_a$ e a bissetriz $AT_a$ se intersectam no ponto $S$ contido no círculo de centro $O$.
 
-Então usamos a tabela:
+Agora seja $R$ o ponto médio do segmento $E_{a}O$ e faça a reflexão de toda a figura \ref{trianbismed} com centro em $R$. Seja $\triangle A'B'C'$ a reflexão do $\triangle ABC$.
 
- \begin{table}[h]
-        \centering
-        \begin{tabular}{|c|c|c|c|}
-            \hline
-            Dividendo & Divisor & Quociente & Resto \\
-            \hline
-            45 & 2 & 22 & 1 \\
-            \hline
-            22 & 2 & 11 & 0 \\
-            \hline
-            11 & 2 & 5 & 1 \\
-            \hline
-            5 & 2 & 2 & 1 \\
-            \hline
-            2 & 2 & 1 & 0 \\
-            \hline
-            1 & 2 & 0 & 1 \\
-            \hline
-        \end{tabular}
-    \end{table}
-Assim, o número 45 escrito em binário é igual a 101101.
-
-Usar outros exemplos de transformação de números naturais em binários.
-
-Tempo: 30 minutos
-
-
-\section{Transformar números naturais em hexadecimal (tabela ASCII)}
-
-Um dos sistemas também muito usado é o sistema hexadecimal. Ele é usado muito na computação através da tabela ASCII. A transformação de um número decimal em hexadecimal usa uma correspondência entre restos de divisão e os algarismos e letras do alfabeto de acordo com a tabela abaixo:
-
-\begin{table}[h]
-        \centering
-        \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
-            \hline
-            Restos da divisão & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 \\
-            \hline
-            Símbolo hexadecimal & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & A & B & C & D & E & F \\
-            \hline
-        \end{tabular}
-    \end{table}
-
-Exemplo: Usando a tabela acima, transformar o número decimal 23870 em número hexadecimal.
-
-Da mesma forma como fazemos com o sistema binário, usamos a calculadora para fazer as divisões e encontrarmos os restos da divisão e preenchemos a tabela:
-
- \begin{table}[h]
-        \centering
-        \begin{tabular}{|c|c|c|c|}
-            \hline
-            Dividendo & Divisor & Quociente & Resto \\
-            \hline
-            23870 & 16 & 1491 & 14 \\
-            \hline
-            1491 & 16 & 93 & 3 \\
-            \hline
-            93 & 16 & 5 & 13 \\
-            \hline
-            5 & 16 & 0 & 5 \\
-            \hline
-        \end{tabular}
-    \end{table}
-
-Usando a tabela e lembrando que temos que ler na ordem inversa, o número hexadecimal é 5D3E.
-
-
-É interessante também mostrar como os computadores usam esses números hexadecimais para relacioná-los com os caracteres do computador. Essa relação é feita através da tabela:
-
-\begin{figure}[h]
-
-    \center
-
-%    \includegraphics[width=15cm]{tabelaascii.jpg}
-
-\end{figure}
-
-
-Tempo: 30 minutos
-
-
-
-\section{Transformar números binários em números naturais}
-
-Para transformarmos um número binário em número natural usaremos a fórmula $ V=S \cdot B^p $, onde:
-
-\begin{itemize}
-    \item V é o valor posicional do símbolo
-    \item S é o valor absoluto do símbolo
-    \item B é a base do sistema numérico
-    \item P é a posição do símbolo em relação ao número, que é definida da direita para a esquerda e começa do zero.
-\end{itemize}
-
-Usaremos também a função memória da calculadora. Por exemplo, transformar o número binário 101101 em número natural.
-
-\begin{table}[h]
-        \centering
-        \begin{tabular}{|l|c|c|c|c|c|c|}
-            \hline
-            Posição & 5 & 4 & 3 & 2 & 1 & 0 \\
-            \hline
-            Símbolo & 1 & 0 & 1 & 1 & 0 & 1 \\
-            \hline
-        \end{tabular}
-    \end{table}
-
-
-Assim, fazemos:
-
-\begin{itemize}
-    \item $V=1 \cdot 2^5=32 $ para a posição 5: e guardamos na memória da calculadora
-    \item $V=0 \cdot 2^4=0 $ para a posiçao 4: e guardamos na memória da calculadora
-    \item $V=1 \cdot 2^3=8 $ para a posição 3: e guardamos na memória da calculadora
-    \item $V=1 \cdot 2^2=4 $ para a posição 2: e guardamos na memória da calculadora
-    \item $V=0 \cdot 2^1=0 $ para a posição 1: e guardamos na memória da calculadora
-    \item $V=1 \cdot 2^0=1 $ para a posição 0: e guardamos na memória da calculadora
-\end{itemize}
-
-Ao ler a memória da calculadora encontramos o resultado: 45.
-Podemos também fazer a conversão de símbolos da tabela hexadecimal para números naturais da mesma forma.
-
-Tempo: 40 minutos
-
-
-
-\chapter{Considerações finais}
-
-O uso da calculadora em sala de aula é um ótimo atrativo para os alunos, que não precisarão usar o tempo em cálculos repetitivos, o professor ainda pode aproveitar essa aula para estender os conhecimentos de sistema de numeração e comentar como funciona as definições de k (Kilo), M (Mega) e G (Giga), tanto para computadores, como para outros sistemas de numeração, pois essas formas de escrita de números aparecem com mais frequência hoje em dia, mas o professor deve sempre se lembrar que a calculadora não irá sempre resolver os problemas de sistemas de numeração, pois como foi colocado no planejamento, um exemplo de sistema de numeração como os romanos não é posicional e, portanto, a calculadora não irá ajudar muito. 
-
-
-
-
-\end{comment}
 \end{document}

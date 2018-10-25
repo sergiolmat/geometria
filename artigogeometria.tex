@@ -12,9 +12,12 @@
 \usepackage{lipsum}				
 \usepackage[brazilian,hyperpageref]{backref}
 
+\usepackage[num,overcite]{abntex2cite}
+\citebrackets()
+
 \newtheorem{teo}{Teorema}
 	 
-\usepackage[alf]{abntex2cite}
+
 \renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
 \renewcommand{\backref}{}
 \renewcommand*{\backrefalt}[4]{
@@ -25,6 +28,7 @@
 	\else
 		Citado #1 vezes nas páginas #2.%
 	\fi}%
+
 \titulo{Uma bissetriz paralela aplicada na construção triangular}
 \autor{Sérgio Luís Soares Almeida \\ Matrícula 18/0006410}
 \local{Brasília}
@@ -195,10 +199,15 @@ Note que, como $R$ é ponto médio de $E_{a}O$, a reflexão de $E_a$ é o própr
 
 \chapter{Resolvendo problemas}
 
-teste de Connelly \cite{con} em uma união
+Wernick (???) apresentou 139 problemas de construção de triângulos com régua e compasso dada a localização de três pontos associados ao triângulo escolhidos de uma lista de dezesseis pontos. Veja Meyers (???) para atualizações sobre o status dos problemas desta lista. Connelly (???) estendeu este trabalho adicionando mais quatro pontos à lista e 140 problemas adicionais, muitos dos quais foram designados como não resolvidos. Agora aplicamos o Teorema \ref{teo1} para resolver quatros desses problemas anteriormente não resolvidos. Os números dos problemas são dados por Connelly.
+
+\section{Problema 99}
+
+Dados $E_a$, $M_a$ e $T_a$ construir o triangulo $\triangle ABC$.
 
 
-\bibliographystyle{unsrt}
+
+
 \bibliography{bibliografia}
 
 

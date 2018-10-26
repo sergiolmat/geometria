@@ -79,14 +79,14 @@ Triangle Construction publicado em 13 de julho de 2009 disponível no endereço 
 \addcontentsline{toc}{chapter}{Introdução}
 
 
-Neste estudo construiremos o círculo de nove pontos e através de um deles (Ponto de Euler) provaremos um teorema que descreve uma linha paralela a uma bissetriz de um triângulo passando pelo ponto médio do lado oposto. Nós então aplicaremos este teorema para a solução de quatro problemas de construção de triângulo.
+Neste estudo construiremos o ponto de Euler e através dele (Ponto de Euler) provaremos um teorema que descreve uma linha paralela a uma bissetriz de um triângulo passando pelo ponto médio do lado oposto demonstrado por Harold Connelly e Beata Randrianantoanina\cite{con2}. Nós então aplicaremos este teorema para a solução de quatro problemas de construção de triângulo.
 
 % \let\clearpage\relax
 
 
 \chapter{Pontos de Euler}
 
-Neste capítulo iremos construir o círculo de nove pontos encontrados em um triângulo qualquer. O círculo de nove pontos é o círculo que intersecta o triângulo em pelo menos seis pontos e mais três pontos nos segmentos relativos a altura entre os vértices do triângulo e os seus lados, sendo esses últimos chamados de pontos de Euler.
+Neste capítulo iremos construir os pontos de Euler encontrados em um triângulo qualquer. Estes pontos são os pontos médios entre a distância dos vértices do triângulo ao seu ortocentro.
 
 Para esta construção iremos usar as seguintes notações:
 
@@ -109,43 +109,21 @@ Para esta construção iremos usar as seguintes notações:
 \end{itemize} 
 
 
-\section{Construindo o Círculo}
+\section{Construindo os Pontos de Euler}
 
 Considere o $\triangle ABC$ conforme a figura \ref{tria1} e nele traçamos as alturas relativas aos seus vértices, encontrando os pontos $D$, $E$, e $F$. Esses pontos são chamados de pés das alturas relativas.
 
 \newpage
 
-Considere agora o triângulo $\triangle DEF$ conforme a figura \ref{tria2} 
+Considere agora a intersecção $O$ entre os três segmentos. Esta intersecção é o \textit{Ortocentro} do triângulo 
+
+Considere os pontos médios $E_a$, $E_b$ e $E_c$ dos segmentos $AO$, $BO$ e $CO$ respectivamente neste triângulo conforme figura \ref{tria4}. Estes pontos médios são os pontos de Euler.
 
 \begin{figure}[h]
 
     \center
 
-    \includegraphics[width=6.9cm]{triangulo2.png}
-    \caption{Alturas relativas e $\triangle DEF$ \label{tria2}}
-    
-\end{figure}
-
-Vamos construir o círculo circunscrito neste triângulo e, para isso, devemos encontrar o seu circuncentro, pois este será o centro desse círculo.
-
-Tracemos as mediatrizes referentes aos segmentos $DE$ e $EF$. O ponto de intersecção desses segmentos será o circuncentro e o raio do círculo circunscrito será a distância desse ponto a qualquer dos vértices do $\triangle DEF$.
-
-\begin{figure}[h]
-
-    \center
-
-    \includegraphics[width=6.9cm]{triangulo3.png}
-    \caption{Alturas relativas e $\triangle DEF$ \label{tria3}}
-    
-\end{figure}
-
-Este círculo terá 6 pontos de intersecção com o $\triangle ABC$: $D$, $E$, $F$, $H$, $I$ e $J$ e mais três pontos de intersecção com as alturas relativas aos lados desse triângulo: $K$, $L$ e $M$. Esses últimos três pontos são chamados de \textit{pontos de Euler}.
-
-\begin{figure}[h]
-
-    \center
-
-    \includegraphics[width=6.9cm]{triangulo4.png}
+    \includegraphics[width=9cm]{triangulo4.png}
     \caption{Alturas relativas e $\triangle DEF$ \label{tria4}}
     
 \end{figure}
@@ -199,13 +177,13 @@ Note que, como $R$ é ponto médio de $E_{a}O$, a reflexão de $E_a$ é o própr
 
 \chapter{Resolvendo problemas}
 
-Wernick (???) apresentou 139 problemas de construção de triângulos com régua e compasso dada a localização de três pontos associados ao triângulo escolhidos de uma lista de dezesseis pontos. Veja Meyers (???) para atualizações sobre o status dos problemas desta lista. Connelly (???) estendeu este trabalho adicionando mais quatro pontos à lista e 140 problemas adicionais, muitos dos quais foram designados como não resolvidos. Agora aplicamos o Teorema \ref{teo1} para resolver quatros desses problemas anteriormente não resolvidos. Os números dos problemas são dados por Connelly.
+Wernick\cite{Wernick} apresentou 139 problemas de construção de triângulos com régua e compasso dada a localização de três pontos associados ao triângulo escolhidos de uma lista de dezesseis pontos. Veja Meyers\cite{Meyers} para atualizações sobre o status dos problemas desta lista. Connelly \cite{con} estendeu este trabalho adicionando mais quatro pontos à lista e 140 problemas adicionais, muitos dos quais foram designados como não resolvidos. Agora aplicamos o Teorema \ref{teo1} para resolver quatros desses problemas anteriormente não resolvidos. Os números dos problemas são dados por Connelly.
 
 \section{Problema 99}
 
 Dados $E_a$, $M_a$ e $T_a$ construir o triangulo $\triangle ABC$.
 
-
+\textit{Solução}: Trace a linha $M_{a}T{a}$ contida no lado BC e então a altura $E_{a}H_{a}$ relativa a esse lado. O círculo com centro em $E_{a}$ passando por $M_{a}$ intersecta a altura em $P$. Desenhe $M_{a}P$. Pelo teorema \ref{teo1}, o segmento passando em $T_{a}$ paralela por $M{a}P$ intersecta a altura em $A$
 
 
 \bibliography{bibliografia}
